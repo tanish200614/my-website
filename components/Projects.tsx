@@ -40,6 +40,22 @@ const projects = [
     badge: 'bg-stone-700/50 text-stone-300',
   },
   {
+    title: 'Autonomous Robotic Vehicle (A*)',
+    role: 'Path Planning Engineer',
+    period: 'Aug 2024 – Jan 2025',
+    description:
+      'Implemented grid-based path planning for an autonomous robot using the A* search algorithm in ROS 2, adopted by 25+ team members.',
+    bullets: [
+      'A* search algorithm in C++ within ROS 2 for grid-based path planning',
+      'Visualized computed paths in RViz with waypoint grids — cut navigation test time 30%',
+      '100% successful obstacle avoidance across all simulation tests',
+    ],
+    stack: ['C++', 'ROS 2', 'RViz', 'A*', 'Path Planning'],
+    github: 'https://github.com/tanish200614',
+    accent: 'border-stone-600/50 hover:border-amber-500/40',
+    badge: 'bg-stone-700/50 text-stone-300',
+  },
+  {
     title: 'Algorithm Practice Platform',
     role: 'Sole Developer',
     period: 'Sep 2025 – Present',
