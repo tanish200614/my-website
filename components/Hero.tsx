@@ -72,7 +72,7 @@ export default function Hero() {
           </div>
 
           <p className="text-stone-400 text-base max-w-md mx-auto md:mx-0 leading-relaxed">
-            Building robots, training models, and shipping full-stack products from Ann Arbor to Abu Dhabi.
+            Building robots, training models, and shipping full-stack products.
           </p>
 
           <div className="flex flex-wrap gap-3 justify-center md:justify-start mt-2">

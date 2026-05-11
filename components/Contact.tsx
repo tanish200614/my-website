@@ -146,7 +146,7 @@ export default function Contact() {
       </motion.div>
 
       <div className="mt-24 pt-8 border-t border-stone-800 text-center text-stone-600 text-sm font-mono">
-        <p>Tanish Dalal · University of Michigan · Class of 2028</p>
+        <p>Tanish Dalal · University of Michigan · Class of 2027</p>
       </div>
     </section>
   );

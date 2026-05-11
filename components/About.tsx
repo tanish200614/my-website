@@ -28,7 +28,7 @@ export default function About() {
             <p>
               I&apos;m a{' '}
               <span className="text-amber-400 font-semibold">Computer Engineering student</span>{' '}
-              at the University of Michigan (graduating 2028), building at the intersection of
+              at the University of Michigan (graduating 2027), building at the intersection of
               robotics, machine learning, and full-stack software.
             </p>
             <p>

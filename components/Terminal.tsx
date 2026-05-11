@@ -36,10 +36,9 @@ function processCommand(raw: string): { lines: Line[]; clear?: boolean } {
     case 'whoami':
       return { lines: out(
         'Tanish Dalal',
-        'Computer Engineering @ University of Michigan (Class of 2028)',
+        'Computer Engineering @ University of Michigan (Class of 2027)',
         '',
         'Building at the intersection of robotics, ML, and full-stack software.',
-        'From Abu Dhabi. Currently in Ann Arbor.',
         '',
         'GPA: 4.0  ·  Dean\'s List  ·  University Honors',
       )};
