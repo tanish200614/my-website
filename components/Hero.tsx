@@ -89,7 +89,7 @@ export default function Hero() {
               Get in Touch
             </a>
             <a
-              href="/resume.pdf"
+              href="/resume-2.pdf"
               download
               className="px-6 py-3 border border-stone-600 hover:border-amber-400 text-stone-300 hover:text-amber-400 font-semibold rounded-lg transition-all duration-200 flex items-center gap-2"
             >
