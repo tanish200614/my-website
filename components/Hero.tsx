@@ -88,6 +88,18 @@ export default function Hero() {
             >
               Get in Touch
             </a>
+            <a
+              href="/resume.pdf"
+              download
+              className="px-6 py-3 border border-stone-600 hover:border-amber-400 text-stone-300 hover:text-amber-400 font-semibold rounded-lg transition-all duration-200 flex items-center gap-2"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+              </svg>
+              Resume
+            </a>
           </div>
 
           {/* Social links */}
