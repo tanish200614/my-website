@@ -110,16 +110,21 @@ export default function Projects() {
         ))}
       </div>
 
-      <div ref={ref} className="mt-8 grid md:grid-cols-3 gap-6">
-        <AnimatePresence mode="popLayout">
-          {filtered.map((p, i) => (
+      <motion.div
+        ref={ref}
+        initial={{ opacity: 0, y: 40 }}
+        animate={inView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.5 }}
+        className="mt-8 grid md:grid-cols-3 gap-6"
+      >
+        <AnimatePresence mode="sync">
+          {filtered.map((p) => (
             <motion.div
               key={p.title}
-              layout
-              initial={{ opacity: 0, y: 30 }}
-              animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-              exit={{ opacity: 0, scale: 0.95 }}
-              transition={{ duration: 0.35, delay: i * 0.08 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.2 }}
               className={`flex flex-col bg-stone-800 border ${p.accent} rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1`}
             >
               <div className="mb-4">
@@ -164,7 +169,7 @@ export default function Projects() {
             </motion.div>
           ))}
         </AnimatePresence>
-      </div>
+      </motion.div>
     </section>
   );
 }
