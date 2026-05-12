@@ -117,16 +117,17 @@ export default function Projects() {
         transition={{ duration: 0.5 }}
         className="mt-8 grid md:grid-cols-3 gap-6"
       >
-        <AnimatePresence mode="sync">
-          {filtered.map((p) => (
-            <motion.div
-              key={p.title}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.2 }}
-              className={`flex flex-col bg-stone-800 border ${p.accent} rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1`}
-            >
+        <AnimatePresence mode="popLayout">
+        {filtered.map((p) => (
+          <motion.div
+            key={p.title}
+            layout
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.95 }}
+            transition={{ duration: 0.18, ease: 'easeOut' }}
+            className={`flex flex-col bg-stone-800 border ${p.accent} rounded-2xl p-6 transition-colors duration-300 hover:-translate-y-1`}
+          >
               <div className="mb-4">
                 <div className="flex items-center gap-2 flex-wrap">
                   <span className={`text-xs font-mono px-2.5 py-1 rounded-md ${p.badge}`}>{p.period}</span>
@@ -166,8 +167,8 @@ export default function Projects() {
                 </svg>
                 View on GitHub
               </a>
-            </motion.div>
-          ))}
+          </motion.div>
+        ))}
         </AnimatePresence>
       </motion.div>
     </section>
