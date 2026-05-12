@@ -10,7 +10,7 @@ export async function POST(req: Request) {
   }
 
   const { error } = await resend.emails.send({
-    from: 'Portfolio Contact <onboarding@resend.dev>',
+    from: 'Portfolio Contact <contact@tanishdalal.com>',
     to: 'tanishdalal14@gmail.com',
     replyTo: email,
     subject: `Portfolio message from ${name}`,
