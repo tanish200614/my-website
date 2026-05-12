@@ -53,8 +53,9 @@ export default function Experience() {
               key={job.company}
               initial={{ opacity: 0, y: 40 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
+              whileHover={{ y: -4 }}
               transition={{ duration: 0.6, delay: i * 0.15 }}
-              className={`bg-gradient-to-br ${job.color} bg-stone-800 border border-stone-700 hover:border-amber-500/40 rounded-2xl p-7 transition-all duration-300 hover:-translate-y-1 group`}
+              className={`bg-gradient-to-br ${job.color} bg-stone-800 border border-stone-700 hover:border-amber-500/40 rounded-2xl p-7 transition-colors duration-300 group`}
             >
               <div className="flex items-start justify-between gap-3 mb-5">
                 <div>
