@@ -25,8 +25,11 @@ function Typewriter() {
       return () => clearTimeout(t);
     }
     if (deleting && text.length === 0) {
-      setDeleting(false);
-      setIdx((idx + 1) % ROLES.length);
+      const t = setTimeout(() => {
+        setDeleting(false);
+        setIdx((current) => (current + 1) % ROLES.length);
+      }, 0);
+      return () => clearTimeout(t);
     }
   }, [text, deleting, idx]);
 

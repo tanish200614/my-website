@@ -14,12 +14,12 @@ const jobs = [
     color: 'from-amber-500/10 to-transparent',
     tag: 'SWE',
     bullets: [
-      'Built React.js dashboard for EV-charger metrics; cut troubleshooting time 25% across 30+ engineers',
-      'Traced overheating root cause behind charger downtime — prevented $15k in lost revenue',
-      'Prototyped Python ARIMA model predicting temperature impact on uptime (8% MAPE)',
-      'Authored 25-page installation guide adopted by 35+ staff across 5 departments',
+      'Developed React.js analytics dashboard for EV-charging infrastructure metrics; reduced telemetry troubleshooting overhead 25% for 30+ EV engineers',
+      'Built Python ARIMA prototype predicting temperature impact on charger uptime with 8% MAPE; isolated overheating root cause and saved $15k in lost revenue',
+      'Integrated and validated core telemetry APIs with automated JavaScript test suites, ensuring 100% data consistency across live charger streams',
+      'Authored 25-page EV-charger installation guide adopted by 35+ staff across 5 departments; evaluated Sinexcel and Teison vendors',
     ],
-    stack: ['React.js', 'Python', 'ARIMA', 'JavaScript', 'REST APIs'],
+    stack: ['React.js', 'Python', 'ARIMA', 'JavaScript', 'API Testing'],
   },
   {
     title: 'Robotics Engineering Intern',

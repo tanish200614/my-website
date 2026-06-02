@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState, useCallback } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 const A = '#F59E0B';   // amber
 const D = '#1C1917';   // dark bg
@@ -32,17 +32,24 @@ export default function RobotSVG() {
     return () => window.removeEventListener('mousemove', onMove);
   }, []);
 
-  const scheduleBlink = useCallback(() => {
-    blinkTimer.current = setTimeout(() => {
-      setBlinking(true);
-      setTimeout(() => { setBlinking(false); scheduleBlink(); }, 160);
-    }, 2500 + Math.random() * 3500);
-  }, []);
-
   useEffect(() => {
+    let blinkOffTimer: ReturnType<typeof setTimeout> | null = null;
+    const scheduleBlink = () => {
+      blinkTimer.current = setTimeout(() => {
+        setBlinking(true);
+        blinkOffTimer = setTimeout(() => {
+          setBlinking(false);
+          scheduleBlink();
+        }, 160);
+      }, 2500 + Math.random() * 3500);
+    };
+
     scheduleBlink();
-    return () => { if (blinkTimer.current) clearTimeout(blinkTimer.current); };
-  }, [scheduleBlink]);
+    return () => {
+      if (blinkTimer.current) clearTimeout(blinkTimer.current);
+      if (blinkOffTimer) clearTimeout(blinkOffTimer);
+    };
+  }, []);
 
   const lx = 158 + pupils.x;
   const ly = 134 + pupils.y;

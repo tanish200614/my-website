@@ -47,7 +47,7 @@ function processCommand(raw: string): { lines: Line[]; clear?: boolean } {
       return { lines: out(
         'Languages    C/C++, Python, JavaScript, Java, MATLAB, Verilog, Assembly',
         'Robotics     ROS 2, STM32, Arduino, Raspberry Pi, CAN, UART, RViz',
-        'Web & ML     React, FastAPI, NumPy, pandas, OpenCV, ARIMA, SciPy',
+        'Web & ML     React, FastAPI, WebSockets, SQLite, NumPy, pandas, OpenCV, ARIMA',
         'Tools        Git, GitHub Actions, Google Cloud, Fusion 360, AutoCAD',
       )};
 
@@ -55,9 +55,10 @@ function processCommand(raw: string): { lines: Line[]; clear?: boolean } {
     case 'work':
       return { lines: out(
         'Software Engineering Intern  ·  ADNOC Distribution  ·  May–Jul 2025',
-        '  ▸ React dashboard for EV-charger metrics — cut troubleshooting time 25%',
+        '  ▸ React analytics dashboard for EV-charger metrics — reduced troubleshooting 25%',
         '  ▸ Python ARIMA model for temperature/uptime prediction (8% MAPE)',
-        '  ▸ Traced overheating root cause — prevented $15k in lost revenue',
+        '  ▸ Automated JavaScript API tests ensured 100% data consistency',
+        '  ▸ Isolated overheating root cause — prevented $15k in lost revenue',
         '',
         'Robotics Engineering Intern  ·  ABB  ·  Jun–Jul 2023',
         '  ▸ Programmed welding robot paths in ABB RobotStudio (RAPID)',
@@ -68,20 +69,20 @@ function processCommand(raw: string): { lines: Line[]; clear?: boolean } {
     case 'projects':
       return { lines: out(
         'Michigan Robomasters  ·  CV Lead & Co-Founder',
-        '  Real-time YOLO armor-plate detection & autonomous shooting systems',
+        '  YOLO/OpenCV armor-plate detection, Kalman target prediction, STM32 motor control',
         '  Stack: C++, ROS 2, OpenCV, YOLO, STM32',
         '',
         'Michigan Mars Rover  ·  Arm IK Controls Developer',
-        '  5-DOF inverse kinematics for a competitive Mars rover arm',
-        '  Stack: C++, ROS 2, RViz',
+        '  Closed-loop 5-DOF Cartesian IK with 30 Hz ROS 2 velocity pipeline',
+        '  Stack: C++, Python, ROS 2, RViz, Eigen, NumPy',
         '',
         'Autonomous Robotic Vehicle (A*)  ·  Path Planning Engineer',
         '  A* grid-based path planning in ROS 2 — 100% obstacle avoidance in simulation',
         '  Stack: C++, ROS 2, RViz',
         '',
         'Algorithm Practice Platform  ·  Sole Developer',
-        '  Full-stack LeetCode-style platform with sandboxed Python executor',
-        '  Stack: React, FastAPI, Python',
+        '  Real-time multiplayer algorithm battle platform with secure code execution',
+        '  Stack: React, FastAPI, Python, WebSockets, SQLite',
       )};
 
     case 'contact':

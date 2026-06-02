@@ -7,7 +7,7 @@ import { SectionLabel } from './About';
 const groups = [
   {
     label: 'Languages',
-    items: ['C/C++', 'Python', 'JavaScript', 'Java', 'MATLAB', 'Assembly', 'Verilog', 'HTML/CSS'],
+    items: ['C/C++ (OOP)', 'Python', 'JavaScript', 'Java', 'MATLAB', 'Assembly', 'Verilog', 'HTML5/CSS3'],
   },
   {
     label: 'Robotics & Embedded',
@@ -15,7 +15,7 @@ const groups = [
   },
   {
     label: 'Web & ML',
-    items: ['React', 'FastAPI', 'NumPy', 'pandas', 'Matplotlib', 'SciPy', 'ARIMA', 'OpenCV'],
+    items: ['React', 'FastAPI', 'WebSockets', 'SQLite', 'NumPy', 'pandas', 'Matplotlib', 'SciPy', 'ARIMA', 'OpenCV'],
   },
   {
     label: 'Tools & Platforms',
