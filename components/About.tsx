@@ -37,9 +37,9 @@ export default function About() {
               robotics infrastructure for client deployments.
             </p>
             <p>
-              Previously, I built EV-charger telemetry and predictive-maintenance systems at
-              <span className="text-stone-200"> ADNOC Distribution</span> and co-founded Michigan&apos;s
-              <span className="text-stone-200"> Robomasters</span> team, where I lead computer vision
+              Previously, I built EV-charger telemetry and predictive-maintenance systems at{' '}
+              <span className="text-stone-200">ADNOC Distribution</span> and co-founded Michigan&apos;s{' '}
+              <span className="text-stone-200">Robomasters</span> team, where I lead computer vision
               and autonomy work on ROS 2 robots.
             </p>
           </div>
