@@ -38,50 +38,46 @@ function processCommand(raw: string): { lines: Line[]; clear?: boolean } {
         'Tanish Dalal',
         'Computer Engineering @ University of Michigan (Class of 2028)',
         '',
-        'Building at the intersection of robotics, ML, and full-stack software.',
+        'Building at the intersection of robotics, ML, and systems software.',
         '',
-        'GPA: 4.0  ·  Dean\'s List  ·  University Honors',
+        'GPA: 3.83  ·  Dean\'s List  ·  University Honors  ·  Tau Beta Pi',
       )};
 
     case 'skills':
       return { lines: out(
-        'Languages    C/C++, Python, JavaScript, Java, MATLAB, Verilog, Assembly',
-        'Robotics     ROS 2, STM32, Arduino, Raspberry Pi, CAN, UART, RViz',
-        'Web & ML     React, FastAPI, WebSockets, SQLite, NumPy, pandas, OpenCV, ARIMA',
-        'Tools        Git, GitHub Actions, Google Cloud, Fusion 360, AutoCAD',
+        'Languages    C/C++, Python, JavaScript, SQL, Java, Verilog, Assembly, MATLAB',
+        'ML & Vision  PyTorch, Ultralytics YOLO, OpenCV, XGBoost, scikit-learn, pandas, NumPy',
+        'Robotics     ROS 2, Nav2, Cartographer, FAST-LIO2, RViz, Gazebo, CycloneDDS, Eigen',
+        'Systems      FastAPI, React, WebSockets, PostgreSQL, TimescaleDB, SQLite, Ansible, Wireshark',
       )};
 
     case 'experience':
     case 'work':
       return { lines: out(
-        'Software Engineering Intern  ·  ADNOC Distribution  ·  May–Jul 2025',
-        '  ▸ React analytics dashboard for EV-charger metrics — reduced troubleshooting 25%',
-        '  ▸ Python ARIMA model for temperature/uptime prediction (8% MAPE)',
-        '  ▸ Automated JavaScript API tests ensured 100% data consistency',
-        '  ▸ Isolated overheating root cause — prevented $15k in lost revenue',
+        'Software Engineering Intern  ·  Candela Technologies  ·  Jul 2026–Present',
+        '  ▸ Integrated LiDAR + IMU data into ROS 2 Cartographer across 6 client environments',
+        '  ▸ Built multithreaded Python automation across 15 APs, cutting turnaround from 3 days to 4 hours',
+        '  ▸ Mapped synchronized robot telemetry to RSSI and latency with ptp4l/phc2sys',
+        '  ▸ Tuned CycloneDDS and analyzed Wireshark captures to reduce downtime 30%',
         '',
-        'Robotics Engineering Intern  ·  ABB  ·  Jun–Jul 2023',
-        '  ▸ Programmed welding robot paths in ABB RobotStudio (RAPID)',
-        '  ▸ Collision-detection logic verified across 50+ simulations',
-        '  ▸ Automated fixture checks — cut path rework by 30%',
+        'Software Engineering Intern  ·  ADNOC Distribution  ·  May 2025–Jul 2025',
+        '  ▸ Built OCPP 1.6 telemetry ingestion for 400+ EV chargers at 7k+ points/min',
+        '  ▸ Trained an XGBoost predictive-maintenance model to 0.78 PR-AUC',
+        '  ▸ Added pytest regression coverage for payload, reconnection, duplicate-event, and DB failure cases',
       )};
 
     case 'projects':
       return { lines: out(
-        'Michigan Robomasters  ·  CV Lead & Co-Founder',
-        '  YOLO/OpenCV armor-plate detection, Kalman target prediction, STM32 motor control',
-        '  Stack: C++, ROS 2, OpenCV, YOLO, STM32',
+        'Michigan Robomasters  ·  Computer Vision Lead & Co-Founder',
+        '  YOLO26n training, solvePnP pose estimation, Kalman tracking, FAST-LIO2 + Nav2 autonomy',
+        '  Stack: C++, Python, ROS 2, OpenCV, YOLO, Nav2, Jetson Orin',
         '',
-        'Michigan Mars Rover  ·  Arm IK Controls Developer',
-        '  Closed-loop 5-DOF Cartesian IK with 30 Hz ROS 2 velocity pipeline',
+        'Michigan Mars Rover  ·  Robotic Arm Controls Developer',
+        '  Closed-loop 5-DOF Cartesian IK with 30 Hz ROS 2 control and reachability analysis',
         '  Stack: C++, Python, ROS 2, RViz, Eigen, NumPy',
         '',
-        'Autonomous Robotic Vehicle (A*)  ·  Path Planning Engineer',
-        '  A* grid-based path planning in ROS 2 — 100% obstacle avoidance in simulation',
-        '  Stack: C++, ROS 2, RViz',
-        '',
         'Algorithm Practice Platform  ·  Sole Developer',
-        '  Real-time multiplayer algorithm battle platform with secure code execution',
+        '  Real-time multiplayer algorithm battle platform with secure code execution and AI-generated assessments',
         '  Stack: React, FastAPI, Python, WebSockets, SQLite',
       )};
 

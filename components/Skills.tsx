@@ -7,19 +7,19 @@ import { SectionLabel } from './About';
 const groups = [
   {
     label: 'Languages',
-    items: ['C/C++ (OOP)', 'Python', 'JavaScript', 'Java', 'MATLAB', 'Assembly', 'Verilog', 'HTML5/CSS3'],
+    items: ['C/C++', 'Python', 'JavaScript', 'SQL', 'Java', 'Assembly', 'Verilog', 'MATLAB'],
   },
   {
-    label: 'Robotics & Embedded',
-    items: ['ROS 2', 'STM32', 'Arduino', 'Raspberry Pi', 'CAN Bus', 'UART', 'ABB RobotStudio', 'RViz'],
+    label: 'ML & Vision',
+    items: ['PyTorch', 'Ultralytics YOLO', 'OpenCV', 'XGBoost', 'scikit-learn', 'pandas', 'NumPy'],
   },
   {
-    label: 'Web & ML',
-    items: ['React', 'FastAPI', 'WebSockets', 'SQLite', 'NumPy', 'pandas', 'Matplotlib', 'SciPy', 'ARIMA', 'OpenCV'],
+    label: 'Robotics & Data',
+    items: ['ROS 2', 'Nav2', 'Cartographer', 'FAST-LIO2', 'RViz', 'Gazebo', 'Eigen', 'CycloneDDS'],
   },
   {
-    label: 'Tools & Platforms',
-    items: ['Git', 'GitHub Actions', 'Google Cloud', 'LaTeX', 'Fusion 360', 'AutoCAD', 'Pytest', 'ModelSim'],
+    label: 'Frameworks & Systems',
+    items: ['FastAPI', 'React', 'WebSockets', 'REST APIs', 'PostgreSQL', 'TimescaleDB', 'SQLite', 'Ansible', 'Wireshark', 'pytest', 'GitHub Actions', 'Linux', 'STM32', 'Jetson Orin'],
   },
 ];
 

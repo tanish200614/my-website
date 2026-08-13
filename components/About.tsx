@@ -4,9 +4,9 @@ import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 
 const stats = [
-  { value: '4.0', label: 'GPA', sub: 'University Honors · Dean\'s List' },
-  { value: '2', label: 'Internships', sub: 'ADNOC · ABB Robotics' },
-  { value: '3+', label: 'Projects', sub: 'Active & shipped' },
+  { value: '3.83', label: 'GPA', sub: 'Dean\'s List · University Honors' },
+  { value: '2', label: 'Internships', sub: 'Candela · ADNOC' },
+  { value: '3', label: 'Featured Projects', sub: 'Resume-aligned work' },
 ];
 
 export default function About() {
@@ -32,13 +32,15 @@ export default function About() {
               robotics, machine learning, and full-stack software.
             </p>
             <p>
-              I&apos;ve shipped production software at <span className="text-stone-200">ADNOC</span> in Abu Dhabi, programmed
-              industrial welding robots at <span className="text-stone-200">ABB</span>, and co-founded
-              Michigan&apos;s <span className="text-stone-200">Robomasters</span> team from the ground up.
+              I&apos;m currently a software engineering intern at <span className="text-stone-200">Candela Technologies</span>,
+              working on ROS 2 autonomy tooling, wireless-network test automation, and multi-sensor
+              robotics infrastructure for client deployments.
             </p>
             <p>
-              I care about systems that work in the real world — whether that&apos;s a robot arm that
-              never loses its TCP clearance, or an API that hits 150&nbsp;ms under load.
+              Previously, I built EV-charger telemetry and predictive-maintenance systems at
+              <span className="text-stone-200"> ADNOC Distribution</span> and co-founded Michigan&apos;s
+              <span className="text-stone-200"> Robomasters</span> team, where I lead computer vision
+              and autonomy work on ROS 2 robots.
             </p>
           </div>
 
