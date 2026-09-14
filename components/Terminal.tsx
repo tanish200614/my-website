@@ -40,7 +40,7 @@ function processCommand(raw: string): { lines: Line[]; clear?: boolean } {
         '',
         'Building at the intersection of robotics, ML, and systems software.',
         '',
-        'GPA: 3.83  ·  Dean\'s List  ·  University Honors  ·  Tau Beta Pi',
+        'GPA: 4.00  ·  Dean\'s List  ·  University Honors  ·  Tau Beta Pi',
       )};
 
     case 'skills':

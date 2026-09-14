@@ -4,7 +4,7 @@ import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 
 const stats = [
-  { value: '3.83', label: 'GPA', sub: 'Dean\'s List · University Honors' },
+  { value: '4.00', label: 'GPA', sub: 'Dean\'s List · University Honors' },
   { value: '2', label: 'Internships', sub: 'Candela · ADNOC' },
   { value: '3', label: 'Featured Projects', sub: 'Resume-aligned work' },
 ];
